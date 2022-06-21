@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDaoimpl implements UserDao{
+public class UserDaoImpl implements UserDao{
     Connection con = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
