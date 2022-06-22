@@ -2,6 +2,7 @@ package dao.impl;
 
 import dao.UserDao;
 import pojo.User;
+import sun.security.pkcs11.Secmod;
 import util.DButil;
 
 import java.sql.Connection;
@@ -84,6 +85,7 @@ public class UserDaoImpl implements UserDao{
         return null;
     }
 
+
     @Override
     public User checkAllUser(String name) {
         try {
@@ -104,5 +106,42 @@ public class UserDaoImpl implements UserDao{
             DButil.dbClose(con,pst,rs);
         }
         return null;
+    }
+
+    @Override
+    public int deleteUser(int id) {
+        try {
+            con = DButil.getCon();
+            pst = con.prepareStatement("delete from user where uid = ?");
+            pst.setObject(1,id);
+            int i = pst.executeUpdate();
+            if (i>0){
+                return 1;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            DButil.dbClose(con,pst,rs);
+        }
+
+        return 0;
+    }
+
+    @Override
+    public int upUser(String name,String pass,int id) {
+        try {
+            con = DButil.getCon();
+            pst = con.prepareStatement("UPDATE user set user_name=? , user_password=? where uid=?");
+            pst.setObject(1,name);
+            pst.setObject(2,pass);
+            pst.setObject(3,id);
+            int i = pst.executeUpdate();
+            if (i>0){
+            return 1;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 }
