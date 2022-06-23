@@ -17,7 +17,7 @@ public class UserDaoTest {
 //        List<User> allUser = userDaoImpl.getAllUser();
 //        System.out.println(allUser);
         //检测用户是否存在
-//        User user= userDaoImpl.checkAllUser("admin");
-//        System.out.println(user);
+        User user= userDaoImpl.checkAllUser("admin");
+        System.out.println(user);
     }
 }
