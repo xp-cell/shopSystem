@@ -1,0 +1,162 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.main {
+	width: 88%;
+	margin: 0 auto;
+}
+
+.content>span {
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.content-goods {
+	width: 18.76%;
+	height: 359px;
+	border: 0.5px solid #ececec;
+	display: inline-block;
+	margin: 8px 2px;
+}
+
+.content-goods:hover {
+	border: 1px solid red;
+}
+
+.goods {
+	width: 100%;
+	height: 359px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.goods img {
+	width: 100%;
+	height: 248px;
+}
+
+.goods span {
+	font-size: 12px;
+}
+
+.goods p {
+	color: red;
+	font-size: 16px;
+	margin: 10px 12px;
+}
+
+.shoptitle {
+	display: block;
+	color: #000000;
+	margin: 10px 12px;
+}
+
+.sales {
+	margin-left: 20px;
+	color: #747474;
+}
+
+.shopnick {
+	color: #747474;
+	margin: 10px 12px;
+}
+
+#banner {
+	width: 970px;
+	height: 270px;
+	margin: 4px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#banner .tic {
+	width: 970px;
+	height: 270px;
+	position: relative;
+}
+
+#banner .tic ul li {
+	list-style: none;
+	width: 0;
+	height: 0;
+	position: absolute;
+	background: #000;
+	left: 485px;
+	top: 135px;
+}
+
+#banner .tic ul li img {
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+}
+
+#banner .tic ul li.l1 {
+	width: 620px;
+	height: 270px;
+	top: 0;
+	left: 172px;
+	z-index: 10;
+}
+
+#banner .tic ul li.l2 {
+	width: 530px;
+	height: 224px;
+	top: 23px;
+	left: 460px;
+	z-index: 9;
+}
+
+#banner .tic ul li.l0 {
+	width: 530px;
+	height: 224px;
+	top: 23px;
+	left: 0px;
+	z-index: 9;
+}
+
+#banner .tic ul li.l9 {
+	width: 530px;
+	height: 100px;
+	top: 85px;
+	left: -200px;
+	z-index: 8;
+}
+
+#banner .tic ul li.l3 {
+	width: 530px;
+	height: 100px;
+	top: 85px;
+	left: 640px;
+	z-index: 8;
+}
+
+#banner .tic ul li.l1 img {
+	opacity: 1;
+}
+
+#banner .btn div {
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+	position: absolute;
+	top: 112px;
+	z-index: 11;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	line-height: 45px;
+}
+
+#banner .btn .left {
+	left: 10px;
+}
+
+#banner .btn .right {
+	right: 10px;
+}

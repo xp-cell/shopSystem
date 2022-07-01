@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+form h2 {
+    /* line-height: 100px; */
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.register {
+    position: absolute;
+    top: 90px;
+    left: 600px;
+    width: 408px;
+    height: 480px;
+    border: 1px solid #807c7c;
+    background-color: #000000;
+    border-radius: 8px;
+    opacity: .5;
+    color: #ffffff;
+}
+
+.name {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin: 16px auto 0;
+}
+
+form label {
+    display: block;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 32px;
+    width: 365px;
+}
+
+.labo {
+    border: 1px solid red;
+}
+
+form input {
+    width: 258px;
+    height: 52px;
+    outline: none;
+    border: none;
+    padding-left: 8px;
+}
+
+form label span {
+    float: left;
+    width: 82px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 16px;
+}
+
+label .info {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    width: 100%;
+    font-size: 12px;
+    height: 27px;
+    line-height: 27px;
+    color: red;
+    padding-left: 0;
+    text-indent: 10px;
+}
+
+label .ti {
+    color: rgb(0, 0, 0);
+}
+
+.btn {
+    background-color: rgb(255, 99, 52);
+    margin-top: 12px;
+    margin-left: 28px;
+    width: 356px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 204, 51, 1);
+}
+
+input {
+    width: 210px;
+    height: 38px;
+    border: 1px solid rgb(187, 183, 186);
+    border-radius: 4px;
+    outline: none;
+    font-size: 18px;
+}
+
+.success {
+    height: 100px;
+    width: 200px;
+    margin: 0px auto;
+    line-height: 100px;
+    text-align: center;
+    padding: 130px;
+}
+
+.success span {
+    color: rgb(51, 255, 0);
+    font-size: 30px;
+}
